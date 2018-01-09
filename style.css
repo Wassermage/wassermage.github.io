@@ -1,63 +1,30 @@
-#top {
-	width: 780px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-}
-
-#NAGLOWEK {
-	background-color: #888;
-}
-
-#MENU {
-	width: 150px;
-	float: left;
-	overflow: hidden;
-	background-color: #ccc;
-}
-
-#TRESC {
-	width: 630px;
-	float: left;
-	overflow: hidden;
-	background-color: #fff;
-}
-
-#STOPKA {
-	clear: both;
-	width: 100%;
-	background-color: #888;
-}
-
-ul, ul li {
-	display: block;
-	list-style: none;
+ul {
+	list-style-type: none;
+	right: 0;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+	background-color: #e6e6e6;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-family:"Segoe UI";   
 }
-
-ul {
-	float: left;
-	background-color: #fff;
-	padding: 1px 0 1px 1px;
-	border: 1px solid #000;
-}
-
-ul li {
+li {
 	float: left;
 }
-
-ul a:link, ul a:visited {
-	text-decoration: none;
+li a {
 	display: block;
-	font-weight: bold;
-	background: #000 url("tlo.gif") repeat-x center;
-	color: #fff;
-	padding: 10px 20px;
-	border-right: 1px solid #fff;
-	border-right: 1px solid #fff;
+	color: #595959;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-weight: 500;
 }
-
-ul a:hover {
-	background-color: #800;
-	background-image: url("tlo2.gif");
+li a:hover:not(.active) {
+	background-color: #cccccc;
+}
+.active {
+	color: #ffffff;
+	background-color: #0099cc;
+}
