@@ -32,4 +32,5 @@ li a:hover:not(.active) {
 .xd {
 	font-family: "Segoe UI";
 	text-align: center;
+	font-size: 32px;
 }
