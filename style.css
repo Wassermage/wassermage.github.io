@@ -28,3 +28,7 @@ li a:hover:not(.active) {
 	color: #ffffff;
 	background-color: #0099cc;
 }
+
+h1 {
+	font-family: "Segoe UI";
+}
