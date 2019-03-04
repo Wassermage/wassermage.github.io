@@ -14,10 +14,18 @@ body
 	margin-right: auto;
 }
 
+#kategoria
+{
+	width: 1000px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
 #plansza
 {
 	width: 1000px;
-	margin-top: 50px;
+	margin-top: 25px;
 	margin-bottom: 50px;
 	text-align: center;
 	font-size: 48px;
