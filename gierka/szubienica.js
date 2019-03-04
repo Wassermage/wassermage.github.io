@@ -100,6 +100,7 @@ function sprawdz(nr) {
 		document.getElementById(element).style.color = "#00C000";
 		document.getElementById(element).style.border = "3px solid #00C000";
 		document.getElementById(element).style.cursor = "default";
+		document.getElementById(element).setAttribute("onclick",";");
 		wypisz_haslo();
 	} else {
 		no.play();
