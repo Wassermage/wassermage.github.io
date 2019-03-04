@@ -1,5 +1,11 @@
+var haselka = new Array(5);
+haselka[0] = "Bez pracy nie ma kołaczy";
+haselka[1] = "Gdzie dwóch się bije tam trzeci korzysta";
+haselka[2] = "Cicha woda brzegi rwie";
+haselka[3] = "Nadzieja matką głupich";
+haselka[4] = "Stół z powyłamywanymi nogami";
 
-var haslo = "Bez pracy nie ma kołaczy";
+var haslo = haselka[Math.floor(Math.random() * haselka.length)];
 haslo = haslo.toUpperCase();
 
 var dlugosc = haslo.length;
