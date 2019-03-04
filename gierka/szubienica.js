@@ -18,10 +18,10 @@ haselka[13] = "Do wesela się zagoi";
 haselka[14] = "Dzieci i ryby głosu nie mają";
 haselka[15] = "Głupi ma zawsze szczęście";
 haselka[15] = "Jak Kuba Bogu tak Bóg Kubie";
-haselka[16] = "Jak sobie pościelesz, tak się wyśpisz";
+haselka[16] = "Jak sobie pościelesz tak się wyśpisz";
 haselka[17] = "Każdy jest kowalem swego losu";
 haselka[18] = "Kłamstwo ma krótkie nogi";
-haselka[19] = "Mowa jest srebrem, a milczenie złotem";
+haselka[19] = "Mowa jest srebrem a milczenie złotem";
 
 var haslo = haselka[Math.floor(Math.random() * haselka.length)];
 haslo = haslo.toUpperCase();
