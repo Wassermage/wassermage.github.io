@@ -110,11 +110,11 @@ String.prototype.ustawZnak = function(miejsce, znak) {
 function newGame() {
 	if(haselka.length > 0) {
 		haslo = haselka[Math.floor(Math.random() * haselka.length)];
-		console.log(haslo);
+//		console.log(haslo);
 		index = haselka.indexOf(haslo);
 		haselka.splice(index, 1);
-		console.log("Numer hasła: "+index);
-		console.log("Pozostała ilość haseł: "+haselka.length);
+//		console.log("Numer hasła: "+index);
+//		console.log("Pozostała ilość haseł: "+haselka.length);
 		haslo = haslo.toUpperCase();
 		dlugosc = haslo.length;
 		haslo1 = "";
