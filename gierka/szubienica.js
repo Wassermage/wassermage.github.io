@@ -3,8 +3,6 @@ haselka[0] = "Bez pracy nie ma kołaczy";
 haselka[1] = "Gdzie dwóch się bije tam trzeci korzysta";
 haselka[2] = "Cicha woda brzegi rwie";
 haselka[3] = "Nadzieja matką głupich";
-//haselka[4] = "Stół z powyłamywanymi nogami";
-//haselka[4] = "Grzegorz Brzęczyszczykiewicz";
 haselka[4] = "Ziarnko do ziarnka a uzbiera się miarka";
 haselka[5] = "Apetyt rośnie w miarę jedzenia";
 haselka[6] = "Biednemu zawsze wiatr w oczy";
@@ -22,28 +20,6 @@ haselka[16] = "Jak sobie pościelesz tak się wyśpisz";
 haselka[17] = "Każdy jest kowalem swego losu";
 haselka[18] = "Kłamstwo ma krótkie nogi";
 haselka[19] = "Mowa jest srebrem a milczenie złotem";
-
-var haslo = haselka[Math.floor(Math.random() * haselka.length)];
-haslo = haslo.toUpperCase();
-
-var dlugosc = haslo.length;
-var ile_skuch = 0;
-
-var yes = new Audio("yes.wav");
-var no= new Audio("no.wav");
-
-var haslo1 = "";
-
-for (i=0; i<dlugosc; i++) {
-	if (haslo.charAt(i)==" ") haslo1 = haslo1 + " ";
-	else haslo1 = haslo1 + "-";
-}
-
-function wypisz_haslo() {
-	document.getElementById("plansza").innerHTML = haslo1;
-}
-
-window.onload = start;
 
 var litery = new Array(35);
 litery[0] = "A";
@@ -82,10 +58,38 @@ litery[32] = "Z";
 litery[33] = "Ż";
 litery[34] = "Ź";
 
+var haslo = haselka[Math.floor(Math.random() * haselka.length)];
+var index = haselka.indexOf(haslo);
+haselka.splice(index, 1);
+//console.log("Numer hasła: "+index);
+//console.log("Pozostała ilość haseł: "+haselka.length);
+haslo = haslo.toUpperCase();
+
+var dlugosc = haslo.length;
+var ile_skuch = 0;
+
+var yes = new Audio("yes.wav");
+var no = new Audio("no.wav");
+
+var haslo1 = "";
+
+for (i=0; i<dlugosc; i++) {
+	if (haslo.charAt(i)==" ") haslo1 = haslo1 + " ";
+	else haslo1 = haslo1 + "-";
+}
+
+function wypisz_haslo() {
+	document.getElementById("plansza").innerHTML = haslo1;
+}
+
+window.onload = start;
+
 function start() {
 	var tresc_diva = "";
 
 	document.getElementById("kategoria").innerHTML = "Kategoria: Przysłowia i powiedzenia";
+
+	document.getElementById("szubienica").innerHTML = '<img src="img/s0.jpg" alt="" />';
 
 	for (i=0; i<=34; i++) {
 		var element = "lit" + i;
@@ -101,6 +105,28 @@ function start() {
 String.prototype.ustawZnak = function(miejsce, znak) {
 	if (miejsce > this.length - 1) return this.toString();
 	else return this.substr(0, miejsce) + znak + this.substr(miejsce + 1);
+}
+
+function newGame() {
+	if(haselka.length > 0) {
+		haslo = haselka[Math.floor(Math.random() * haselka.length)];
+		console.log(haslo);
+		index = haselka.indexOf(haslo);
+		haselka.splice(index, 1);
+		console.log("Numer hasła: "+index);
+		console.log("Pozostała ilość haseł: "+haselka.length);
+		haslo = haslo.toUpperCase();
+		dlugosc = haslo.length;
+		haslo1 = "";
+		for (i=0; i<dlugosc; i++) {
+			if (haslo.charAt(i)==" ") haslo1 = haslo1 + " ";
+			else haslo1 = haslo1 + "-";
+		}
+		ile_skuch = 0;
+		start();
+	} else {
+		alert("Gratulacje! Odgadnięto już wszystkie hasła dostępne na stronie!");
+	}
 }
 
 function sprawdz(nr) {
@@ -138,9 +164,9 @@ function sprawdz(nr) {
 	}
 	//wygrana
 	if (haslo == haslo1)
-	document.getElementById("alfabet").innerHTML = "Tak jest! Odgadnięte hasło:<br />"+haslo+'<br /><br /><span class="reset" onclick="location.reload()">Jeszcze raz?</span>';
+	document.getElementById("alfabet").innerHTML = "<span style='color:green'>Tak jest!</span> Odgadnięte hasło:<br />"+haslo+'<br /><br /><span class="reset" onclick="newGame()">Jeszcze raz?</span>';
 
 	//przegrana
 	if (ile_skuch>=9)
-	document.getElementById("alfabet").innerHTML = "Przegrana! Prawidłowe hasło:<br />"+haslo+'<br /><br /><span class="reset" onclick="location.reload()">Jeszcze raz?</span>';
+	document.getElementById("alfabet").innerHTML = "<span style='color:red'>Przegrana!</span> Prawidłowe hasło:<br />"+haslo+'<br /><br /><span class="reset" onclick="newGame()">Jeszcze raz?</span>';
 }
