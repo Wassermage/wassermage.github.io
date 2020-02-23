@@ -19,10 +19,10 @@ body {
 
 header {
     background-attachment: fixed;
-    background-color: darkgrey;
+    background-color: #333;
     background-image: url('../img/background.png');
-    background-repeat: no-repeat;
     background-position: center -200px;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 1em 0;
     font-size: 3em;
@@ -102,11 +102,14 @@ aside a{
 
 section {
     background-attachment: fixed;
-    background-color: darkgrey;
+    background-color: #333;
     background-image: url('../img/background.png');
-    background-repeat: no-repeat;
     background-position: center -200px;
+    background-repeat: no-repeat;
     float: right;
+    height: 450px;
+    overflow: auto;
+    padding: 10px 0px;
     width: 83%;
 }
 
@@ -122,13 +125,15 @@ article h3 {
 }
 
 footer {
-    background-color: gray;
+    background-color: #333;
     float: left;
-    padding: 0;
+    padding: 50px 0px;
     text-align: center;
     width: 100%;
 }
 
-footer h3 {
-    padding: 40px 0px;
+footer a {
+    color: #ddd;
+    padding: 0px 0px;
+    text-decoration: none;
 }
