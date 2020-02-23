@@ -1,0 +1,134 @@
+body {
+    background-color: #5A5A5A;
+    display: block;
+    font-family:"Segoe UI";
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 54px;
+}
+
+header {
+    background-attachment: fixed;
+    background-color: darkgrey;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-position: center -200px;
+    margin: 0;
+    padding: 1em 0;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    width: 100%;
+    color: #0099cc;
+}
+
+nav {
+    position: sticky;
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+nav li {
+    border-right: 1px solid #bbb;
+    float: left;
+}
+
+nav a {
+    color: #ddd;
+    display: block;
+    font-weight: 700;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li.right {
+    border-left: 1px solid #bbb;
+    border-right: none;
+    float: right;
+}
+
+nav .active {
+    color: #fff;
+    font-weight: 700;
+	background-color: #0099cc;
+}
+
+nav a:hover:not(.active) {
+    background-color: #222;
+}
+
+aside {
+    background-color: darkgrey;
+    float: left;
+    width: 17%;
+}
+
+aside ul {
+    margin: 0px;
+    padding: 10px;
+}
+
+aside li {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+section {
+    background-attachment: fixed;
+    background-color: darkgrey;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-position: center -200px;
+    float: right;
+    width: 83%;
+}
+
+article {
+    background-color: #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+article h3 {
+    margin: 0px;
+}
+
+footer {
+    background-color: gray;
+    float: left;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer h3 {
+    padding: 40px 0px;
+}
