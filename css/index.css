@@ -116,6 +116,7 @@ section {
 article {
     background-color: #ccc;
     border-radius: 15px;
+    opacity: 0.8;
     padding: 10px;
     margin: 10px 20px;
 }
