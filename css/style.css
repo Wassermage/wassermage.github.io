@@ -59,12 +59,13 @@ a.nav-link:hover {
 }
 .wButton {
     border-radius: 3px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
+    height: 100%;
     padding: 10px;
     text-align: center;
 }
 .wButton figure {font-size: 2.5rem;}
-.wButton figcaption {font-size: 20px;}
+.wButton figcaption {font-size: 1.25rem;}
 section {
     text-align: center;
     margin: 15px 0;
@@ -145,7 +146,7 @@ section {
 .Class2 {background-color: rgba(211, 84, 30, .75);}
 .Class3 {background-color: rgba(41, 169, 224, .6);}
 .ClassFiles-button {
-    background-color: rgba(240, 240, 240, .8);
+    background-color: rgba(240, 240, 240, .85);
     box-shadow: 0 0 3px #333;
     color: #444;
     font-weight: 600;
@@ -155,12 +156,13 @@ section {
     background-color: rgba(230, 230, 230, .8);
     color: #333;
 }
+.ClassFiles-button figcaption {font-size: 1rem;}
 
 
 /* ĆWICZENIA */
 .Excercises {background-color: rgba(99, 168, 20, .6);}
 .Excercises-button {
-    background-color: rgba(240, 240, 240, .8);
+    background-color: rgba(240, 240, 240, .85);
     font-weight: 600;
     color: #444;
 }
@@ -169,13 +171,15 @@ section {
     background-color: rgba(230, 230, 230, .8);
     color: #333;
 }
+.Excercises-button figcaption {font-size: 1rem;}
+
 
 /* Egzamin */
-.Exam {background-color: rgba(255, 255, 255, .5);}
+.Exam {background-color: rgba(131, 54, 108, .7);}
 
 
 /* KONTAKT */
-.Contact {background-color: rgba(255, 255, 255, .5);}
+.Contact {background-color: rgba(230, 230, 230, .3);}
 
 
 /* SKALOWANIE */
