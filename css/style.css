@@ -23,7 +23,6 @@ header.Header {
 
 
 /* NAVBAR */
-/* nav.navbar {padding: 0px;} */
 nav.sticky-top {
     max-height: 360px;
     overflow-y: auto;
@@ -59,7 +58,7 @@ a.home:hover {
 
 
 /* SEKCJE */
-.wSection {padding: 20px 0px;}
+.wSection {padding: 20px 0;}
 .wButton {
     border-radius: 3px;
     font-size: 1.25em;
@@ -70,18 +69,18 @@ a.home:hover {
 .wButton figcaption {font-size: 20px;}
 section {
     text-align: center;
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 
 
 /* SEKCJA Klasy */
-.HomepageKlasy {background-color: rgba(211, 84, 30, 0.7);}
+.HomepageKlasy {background-color: rgba(211, 84, 30, .7);}
 .HomepageKlasy h1 {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
-    text-shadow: 0px 0px 6px #333;
+    text-shadow: 0 0 6px #333;
 }
 .HomepageKlasy a {
     font-weight: 700;
@@ -113,7 +112,7 @@ section {
 
 
 /* SEKCJA Main */
-.HomepageMain {background-color: rgba(0, 110, 184, 0.5);}
+.HomepageMain {background-color: rgba(0, 110, 184, .5);}
 .HomepageMain a {
     font-weight: 600;
 }
@@ -122,11 +121,11 @@ section {
     font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
-    text-shadow: 0px 0px 6px #333;
+    text-shadow: 0 0 6px #333;
 }
 .HomepageMain-button {
-    background-color: rgba(41, 169, 224, 0.6);
-    box-shadow: 0px 0px 10px #333;
+    background-color: rgba(41, 169, 224, .6);
+    box-shadow: 0 0 10px #333;
     color: #fff;
 }
 .HomepageMain-button:hover {
@@ -139,10 +138,10 @@ section {
 .HomepageCode {padding: 30px 0 0;}
 .HomepageCode-area {padding-bottom: 30px;}
 .HomepageCode-header {
-    background-color: rgba(15, 20, 35, 0.8);
+    background-color: rgba(15, 20, 35, .8);
     color: #fff;
     overflow: auto;
-    margin: 0px;
+    margin: 0;
     padding: 30px;
 }
 .HomepageCode-header h1 {
@@ -155,6 +154,7 @@ section {
     font-size: 1.5rem;
     padding-top: 5px;
 }
+
 
 /* MATERIAŁY DLA KLAS 2 */
 .Class2 {background-color: rgba(211, 84, 30, .75);}
