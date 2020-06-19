@@ -80,7 +80,7 @@ section {
 }
 .HomepageKlasy-button:hover {
     transition: .2s;
-    background-color: rgba(211, 97, 44, .5);
+    background-color: rgb(185, 85, 38);
 }
 .HomepageKlasy-button figure {
     color: #fff;
@@ -124,6 +124,7 @@ section {
 }
 .HomepageCode-header h1 {
     float: left;
+    font-size: 2.5rem;
     margin: 0;
 }
 .HomepageCode-header a {
@@ -131,6 +132,10 @@ section {
     float: right;
     font-size: 1.5rem;
     padding-top: 5px;
+}
+.HomepageCode-header a:hover {
+    transition: .2s;
+    color: #aaa;
 }
 
 /* STOPKA */
