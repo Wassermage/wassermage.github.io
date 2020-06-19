@@ -24,6 +24,10 @@ header.Header {
 
 /* NAVBAR */
 nav.navbar {padding: 0px;}
+nav.sticky-top {
+    max-height: 340px;
+    overflow-y: auto;
+}
 a.nav-link {
     color: #ddd !important;
     font-size: 1.1rem;
@@ -52,6 +56,7 @@ a.home:hover {
     transition: .3s;
     background-color: #ddd !important;
 }
+
 
 /* SEKCJE */
 .wSection {padding: 20px 0px;}
