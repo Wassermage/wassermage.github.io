@@ -23,7 +23,7 @@ header.Header {
 
 
 /* NAVBAR */
-nav.navbar {padding: 0px;}
+/* nav.navbar {padding: 0px;} */
 nav.sticky-top {
     max-height: 360px;
     overflow-y: auto;
@@ -45,7 +45,7 @@ a.nav-link:hover {
     background-color: #41474e;
     border-radius: 5px;
 }
-.navbar .navbar-collapse {text-align: center;}
+.navbar-collapse {text-align: center;}
 a.home {
     color: #444 !important;
     background-color: #eee;
