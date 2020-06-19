@@ -1,0 +1,211 @@
+/* BODY */
+body {
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+    font-family: "Segoe UI";
+}
+a {text-decoration: none !important;}
+
+
+/* NAGŁÓWEK */
+header.Header {
+    background-color: rgba(52, 160, 249, 0.1);
+    padding: 30px 0;
+}
+.HeaderText h1 {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    max-width: 345px;
+    text-transform: uppercase;
+}
+.HeaderLogo img {width: 100%;}
+
+
+/* NAVBAR */
+nav.navbar {padding: 0px;}
+a.nav-link {
+    color: #ddd !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    min-width: 100px;
+    padding: 12px;
+}
+.active a {
+    background-color: #41474e;
+    border-radius: 5px;
+    color: #fff !important;
+}
+a.nav-link:hover {
+    transition: .3s;
+    background-color: #41474e;
+    border-radius: 5px;
+}
+.navbar .navbar-collapse {text-align: center;}
+a.home {
+    color: #444 !important;
+    background-color: #eee;
+    border-radius: 5px;
+    text-shadow: 0 0 16px #999;
+}
+a.home:hover {
+    transition: .3s;
+    background-color: #ddd !important;
+}
+
+/* SEKCJE */
+.wSection {padding: 20px 0px;}
+.wButton {
+    border-radius: 3px;
+    font-size: 1.25em;
+    padding: 10px;
+    text-align: center;
+}
+.wButton figure {font-size: 2.5rem;}
+.wButton figcaption {font-size: 20px;}
+section {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+
+/* SEKCJA Klasy */
+.HomepageKlasy {background-color: rgba(211, 84, 30, 0.7);}
+.HomepageKlasy h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0px 0px 6px #333;
+}
+.HomepageKlasy a {
+    font-weight: 700;
+}
+.HomepageKlasy-button {
+    background-color: rgba(211, 97, 44, .6);
+    box-shadow: 0 0 10px #333;
+}
+.HomepageKlasy-button:hover {
+    transition: .2s;
+    background-color: rgba(211, 97, 44, .5);
+}
+.HomepageKlasy-button figure {
+    color: #fff;
+    text-shadow: 0 0 10px #555;
+}
+.ClassButton div {
+    border: 4px solid #ddd;
+    border-radius: 100%;
+    box-shadow: 0 0 6px #666;
+    height: 60px;
+    width: 60px;
+    margin: 10px auto;
+}
+.ClassButton span {
+    line-height: 48px;
+    vertical-align: middle;
+}
+
+
+/* SEKCJA Main */
+.HomepageMain {background-color: rgba(0, 110, 184, 0.5);}
+.HomepageMain a {
+    font-weight: 600;
+}
+.HomepageMain h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0px 0px 6px #333;
+}
+.HomepageMain-button {
+    background-color: rgba(41, 169, 224, 0.6);
+    box-shadow: 0px 0px 10px #333;
+    color: #fff;
+}
+.HomepageMain-button:hover {
+    transition: .2s;
+    background-color: rgb(9, 123, 172);
+}
+
+
+/* SEKCJA Code */
+.HomepageCode {padding: 30px 0 0;}
+.HomepageCode-area {padding-bottom: 30px;}
+.HomepageCode-header {
+    background-color: rgba(15, 20, 35, 0.8);
+    color: #fff;
+    overflow: auto;
+    margin: 0px;
+    padding: 30px;
+}
+.HomepageCode-header h1 {
+    float: left;
+    margin: 0;
+}
+.HomepageCode-header a {
+    color: #fff;
+    float: right;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+/* MATERIAŁY DLA KLAS 2 */
+.Class2 {background-color: rgba(211, 84, 30, .75);}
+.Class3 {background-color: rgba(41, 169, 224, 0.6);}
+.ClassFiles h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 13px;
+    text-align: center;
+    text-shadow: 0px 0px 6px #333;
+}
+.ClassFiles-button {
+    background-color: rgba(240, 240, 240, .9);
+    box-shadow: 0px 0px 8px #333;
+    font-weight: 600;
+    color: #444;
+}
+.ClassFiles-button:hover {
+    transition: .2s;
+    background-color: rgba(230, 230, 230, .9);
+    color: #333;
+}
+
+
+/* STOPKA */
+.HomepageFooter {
+    background-color: rgba(51, 51, 51, .9);
+    color: #ccc;
+    padding: 40px 0;
+}
+.HomepageFooter b {color: #fff;}
+
+
+/* SKALOWANIE */
+@media only screen and (min-width:992px) {
+    div.HeaderText h1 {
+        font-size: 3rem;
+        padding-top: 2%;
+    }
+}
+@media only screen and (max-width:767px) {
+    div.HeaderText h1 {font-size: 1.6rem;}
+}
+@media only screen and (max-width:575px) {
+    div.wButton {margin: 5px 0;}
+    div.row {margin: 0 3%;}
+    div.HeaderText {padding: 0;}
+    div.HeaderText h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+        max-width: none;
+        text-align: center;
+    }
+    section {margin: 10px 0;}
+}
+@media only screen and (max-width:363px) {
+    div.HeaderText h1 {font-size: 2rem;}
+}
