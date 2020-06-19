@@ -6,7 +6,6 @@ body {
 }
 a {text-decoration: none !important;}
 
-
 /* NAGŁÓWEK */
 header.Header {
     background-color: rgba(52, 160, 249, 0.1);
@@ -20,7 +19,6 @@ header.Header {
     text-transform: uppercase;
 }
 .HeaderLogo img {width: 100%;}
-
 
 /* NAVBAR */
 nav.sticky-top {
@@ -50,9 +48,15 @@ a.nav-link:hover {
 }
 .navbar-collapse {text-align: center;}
 
-
 /* SEKCJE */
 .wSection {padding: 20px 0;}
+.wSection h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 0 6px #333;
+}
 .wButton {
     border-radius: 3px;
     font-size: 1.25em;
@@ -66,19 +70,9 @@ section {
     margin: 15px 0;
 }
 
-
 /* SEKCJA Klasy */
 .HomepageKlasy {background-color: rgba(211, 84, 30, .7);}
-.HomepageKlasy h1 {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-align: center;
-    text-shadow: 0 0 6px #333;
-}
-.HomepageKlasy a {
-    font-weight: 700;
-}
+.HomepageKlasy a {font-weight: 700;}
 .HomepageKlasy-button {
     background-color: rgba(211, 97, 44, .6);
     box-shadow: 0 0 10px #333;
@@ -104,19 +98,9 @@ section {
     vertical-align: middle;
 }
 
-
 /* SEKCJA Main */
 .HomepageMain {background-color: rgba(0, 110, 184, .5);}
-.HomepageMain a {
-    font-weight: 600;
-}
-.HomepageMain h1 {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-align: center;
-    text-shadow: 0 0 6px #333;
-}
+.HomepageMain a {font-weight: 600;}
 .HomepageMain-button {
     background-color: rgba(41, 169, 224, .6);
     box-shadow: 0 0 10px #333;
@@ -126,7 +110,6 @@ section {
     transition: .2s;
     background-color: rgb(9, 123, 172);
 }
-
 
 /* SEKCJA Code */
 .HomepageCode {padding: 30px 0 0;}
@@ -149,31 +132,6 @@ section {
     padding-top: 5px;
 }
 
-
-/* MATERIAŁY DLA KLAS 2 */
-.Class2 {background-color: rgba(211, 84, 30, .75);}
-.Class3 {background-color: rgba(41, 169, 224, 0.6);}
-.ClassFiles h1 {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 500;
-    padding-bottom: 13px;
-    text-align: center;
-    text-shadow: 0px 0px 6px #333;
-}
-.ClassFiles-button {
-    background-color: rgba(240, 240, 240, .9);
-    box-shadow: 0px 0px 8px #333;
-    font-weight: 600;
-    color: #444;
-}
-.ClassFiles-button:hover {
-    transition: .2s;
-    background-color: rgba(230, 230, 230, .9);
-    color: #333;
-}
-
-
 /* STOPKA */
 .HomepageFooter {
     background-color: rgba(51, 51, 51, .9);
@@ -181,6 +139,43 @@ section {
     padding: 40px 0;
 }
 .HomepageFooter b {color: #fff;}
+
+
+/* MATERIAŁY DLA KLAS 2-3 */
+.Class2 {background-color: rgba(211, 84, 30, .75);}
+.Class3 {background-color: rgba(41, 169, 224, .6);}
+.ClassFiles-button {
+    background-color: rgba(240, 240, 240, .8);
+    box-shadow: 0 0 3px #333;
+    color: #444;
+    font-weight: 600;
+}
+.ClassFiles-button:hover {
+    transition: .2s;
+    background-color: rgba(230, 230, 230, .8);
+    color: #333;
+}
+
+
+/* ĆWICZENIA */
+.Excercises {background-color: rgba(99, 168, 20, .6);}
+.Excercises-button {
+    background-color: rgba(240, 240, 240, .8);
+    font-weight: 600;
+    color: #444;
+}
+.Excercises-button:hover {
+    transition: .2s;
+    background-color: rgba(230, 230, 230, .8);
+    color: #333;
+}
+
+/* Egzamin */
+.Exam {background-color: rgba(255, 255, 255, .5);}
+
+
+/* KONTAKT */
+.Contact {background-color: rgba(255, 255, 255, .5);}
 
 
 /* SKALOWANIE */
