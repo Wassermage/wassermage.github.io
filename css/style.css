@@ -34,27 +34,21 @@ a.nav-link {
     min-width: 100px;
     padding: 12px;
 }
-.active a {
-    background-color: #41474e;
-    border-radius: 5px;
-    color: #fff !important;
-}
 a.nav-link:hover {
     transition: .3s;
     background-color: #41474e;
     border-radius: 5px;
 }
-.navbar-collapse {text-align: center;}
-a.home {
+.active a {
     color: #444 !important;
-    background-color: #eee;
+    background-color: #ddd;
     border-radius: 5px;
-    text-shadow: 0 0 16px #999;
 }
-a.home:hover {
-    transition: .3s;
+.active a:hover {
     background-color: #ddd !important;
+    cursor: default;
 }
+.navbar-collapse {text-align: center;}
 
 
 /* SEKCJE */
