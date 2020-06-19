@@ -181,10 +181,29 @@ section {
 
 /* Egzamin */
 .Exam {background-color: rgba(131, 54, 108, .7);}
+.Exam-button {
+    background-color: rgba(240, 240, 240, .85);
+    font-weight: 600;
+    color: #444;
+}
+.Exam-button:hover {
+    transition: .2s;
+    background-color: rgba(230, 230, 230, .8);
+    color: #333;
+}
+.Exam-button figcaption {font-size: 1.2rem;}
 
 
 /* KONTAKT */
 .Contact {background-color: rgba(230, 230, 230, .3);}
+
+
+/* KOLOROWANIE IKONEK */
+svg.fa-file-archive {color: #f80;}
+svg.fa-file-excel {color: #394;}
+svg.fa-file-powerpoint {color: #d40;}
+svg.fa-file-pdf {color: #a00;}
+svg.fa-file-word {color: #0ae;}
 
 
 /* SKALOWANIE */
