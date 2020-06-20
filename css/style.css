@@ -64,7 +64,10 @@ a.nav-link:hover {
     padding: 10px;
     text-align: center;
 }
-.wButton figure {font-size: 2.5rem;}
+.wButton figure {
+    font-size: 2.5rem;
+    margin-bottom: .7rem;
+}
 .wButton figcaption {font-size: 1.25rem;}
 section {
     text-align: center;
@@ -147,36 +150,24 @@ section {
 .HomepageFooter b {color: #fff;}
 
 
-/* MATERIAŁY DLA KLAS 2-3 */
+/* SUBPAGES */
 .Class2 {background-color: rgba(211, 84, 30, .75);}
 .Class3 {background-color: rgba(41, 169, 224, .6);}
-.ClassFiles-button {
+.Excercises {background-color: rgba(99, 168, 20, .6);}
+
+.Subpage-button {
     background-color: rgba(240, 240, 240, .85);
     box-shadow: 0 0 3px #333;
     color: #444;
     font-weight: 600;
 }
-.ClassFiles-button:hover {
+.Subpage-button:hover {
     transition: .2s;
     background-color: rgba(230, 230, 230, .8);
     color: #333;
 }
-.ClassFiles-button figcaption {font-size: 1rem;}
-
-
-/* ĆWICZENIA */
-.Excercises {background-color: rgba(99, 168, 20, .6);}
-.Excercises-button {
-    background-color: rgba(240, 240, 240, .85);
-    font-weight: 600;
-    color: #444;
-}
-.Excercises-button:hover {
-    transition: .2s;
-    background-color: rgba(230, 230, 230, .8);
-    color: #333;
-}
-.Excercises-button figcaption {font-size: 1rem;}
+.Subpage-button figure {margin-bottom: 0;}
+.Subpage-button figcaption {font-size: 1rem;}
 
 
 /* Egzamin */
@@ -199,12 +190,11 @@ section {
 
 
 /* KOLOROWANIE IKONEK */
-svg.fa-file-archive {color: #f80;}
+svg.fa-file-archive {color: #d83;}
 svg.fa-file-excel {color: #394;}
 svg.fa-file-powerpoint {color: #d40;}
 svg.fa-file-pdf {color: #a00;}
 svg.fa-file-word {color: #0ae;}
-
 
 /* SKALOWANIE */
 @media only screen and (min-width:992px) {
@@ -215,6 +205,7 @@ svg.fa-file-word {color: #0ae;}
 }
 @media only screen and (max-width:767px) {
     div.HeaderText h1 {font-size: 1.6rem;}
+    div.wButton figure {margin-bottom: 0;}
 }
 @media only screen and (max-width:575px) {
     div.wButton {margin: 5px 0;}
