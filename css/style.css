@@ -154,6 +154,8 @@ section {
 .Class2 {background-color: rgba(211, 84, 30, .75);}
 .Class3 {background-color: rgba(41, 169, 224, .6);}
 .Excercises {background-color: rgba(99, 168, 20, .6);}
+.Exam {background-color: rgba(131, 54, 108, .7);}
+.Contact {background-color: rgba(230, 230, 230, .3);}
 
 .Subpage-button {
     background-color: rgba(240, 240, 240, .85);
@@ -171,7 +173,6 @@ section {
 
 
 /* Egzamin */
-.Exam {background-color: rgba(131, 54, 108, .7);}
 .Exam-button {
     background-color: rgba(240, 240, 240, .85);
     font-weight: 600;
@@ -183,10 +184,6 @@ section {
     color: #333;
 }
 .Exam-button figcaption {font-size: 1.2rem;}
-
-
-/* KONTAKT */
-.Contact {background-color: rgba(230, 230, 230, .3);}
 
 
 /* KOLOROWANIE IKONEK */
